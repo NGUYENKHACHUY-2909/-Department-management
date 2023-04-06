@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 2px solid black;
+}
+#logo{
+    min-width: 300px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#auth{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: end;
+    padding:0px 50px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#auth ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#left ul li{
+    padding: 20px 20px;
+}
+#left ul li:hover{
+    background-color: rgb(212, 155, 155);
+}
+#left ul li i{
+    margin-right: 10px;
+}
+
+#left{
+    min-width: 300px;
+    background-color: aqua;
+    padding-top:40px;
+    font-size: 20px;
+}
+#right{
+    width: 100%;
+    padding: 30px;
+}
+#actions{
+    display: flex;
+    justify-content: space-between;
+}
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+#modal-body{
+    background-color: rgb(236, 232, 232);
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+    min-width: 500px;
+}
+#modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgb(73, 68, 68);
+}
+#input-form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgb(73, 68, 68);
+}
+#input-form input{
+    height: 50px;
+    margin-top: 20px;
+}
+#control-btn{
+    display: flex;
+    padding: 40px;
+    padding-bottom: 20px;
+    justify-content: end;
+}
+#control-btn button{
+    width: 100px;
+    height: 50px;
+}
